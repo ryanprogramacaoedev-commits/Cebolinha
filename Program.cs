@@ -1,10 +1,15 @@
-﻿string frase, ceboles;
+string frase;
 
-Console.Write("Escreva uma frase: ");
+
+Console.WriteLine("Digite uma frase: ");
+
+
 frase = Console.ReadLine()!;
-ceboles =  frase
-.Replace("r", "l")
-.Replace("R", "L");
-Console.WriteLine(ceboles);
 
 
+Console.WriteLine(
+    frase.Replace("rr", "l")
+         .Replace("RR", "L")
+         .Replace("r", "l")
+         .Replace("R", "L")
+);
